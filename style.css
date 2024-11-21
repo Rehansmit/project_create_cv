@@ -4,6 +4,13 @@ body{
     background-size: cover;
 }
 
+.nav_head{
+    border: 4px solid orangered;
+    border-radius: 20px;
+}
+
+
+
 .nav-img{
     width: 150px;
     height: 100px;
