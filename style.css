@@ -1,0 +1,31 @@
+body{
+    background-image: url(assets/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-img{
+    width: 150px;
+    height: 100px;
+}
+
+h1{
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.cv{height: 200;
+    width: 50p;
+color: yellowgreen;
+font-weight: bolder;
+/* display: inline-block; */
+
+}
+
+.lgo{
+    height: 60px;
+    width: 100px;
+    display: inline-block;
+}
