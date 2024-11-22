@@ -1,71 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
-<!-- head area -->
 
-    <ul class="nav justify-content-around bg-dark d-flex nav_head ">
-        <li class="nav-item">
-          <a class="nav-link active " aria-current="page" href="#"><img  class="nav-img" src="assets/cv logo 1.jpg" alt=""></a>
-        </li>
-        <li class="nav-item mt-3">
-          <a class="nav-link " href="#"><h1><p class="cv"><p><img class="lgo" src="assets/cvlg.PNG" alt="">  Generate Personal Curriculum Vitae </h1></a>
-        </li>
+  <!-- head area -->
 
-        <li class="nav-item">
-            <a class="nav-link active " aria-current="page" href="#"><img  class="nav-img" src="assets/cv logo 1.jpg" alt=""></a>
-          </li>
-  
-             </ul>
+  <ul class="nav justify-content-around bg-dark d-flex nav_head ">
+    <li class="nav-item">
+      <a class="nav-link active " aria-current="page" href="#"><img class="nav-img" src="assets/cv logo 1.jpg"
+          alt=""></a>
+    </li>
+    <li class="nav-item mt-3">
+      <a class="nav-link " href="#">
+        <h1>
+          <p class="cv">
+          <p><img class="lgo" src="assets/cvlg.PNG" alt=""> Generate Personal Curriculum Vitae
+        </h1>
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link active " aria-current="page" href="#"><img class="nav-img" src="assets/cv logo 1.jpg"
+          alt=""></a>
+    </li>
+
+  </ul>
 
 
- <!-- starting main div 1 -->
+  <!-- starting main div 1 -->
 
 
- <div class="container maindiv-1 justify-content-center d-flex mt-5">
-<div class="row">
-<div class="col-md-6 d-flex ">
-    <div class="mb-3 ">
-        <label for="user name" class="uname-label">Enter Your Full Name</label>
-        <input type="text" class="name" id="u_name" placeholder="Example input placeholder">
+  <div id="maindiv-1" class="container  justify-content-center d-flex mt-5">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 d-flex flex-column text-start ">
+          <label for="name">Your Name</label>
+          <input id="name" class=" form-control" type="text" placeholder="enter your name">
+        </div>
+        <div class="col-12 col-md-6 d-flex flex-column text-start">
+          <label for="father-name">Fathers Name</label>
+          <input id="father-name" class=" form-control" type="text" placeholder="enter fathers name">
+        </div>
+        <div class="col-12 col-md-6 d-flex flex-column text-start mt-5">
+          <label for="email">Email</label>
+          <input id="email" class=" form-control" type="email" placeholder="Email">
+        </div>
+        <div class="col-12 col-md-6 d-flex flex-column text-start mt-5">
+          <label for="number">Phone</label>
+          <input id="number" class=" form-control" type="number" placeholder=" Phone">
+        </div>
+        <div class="col-12 col-md-6 d-flex flex-column text-start mt-5">
+          <label for="DOB">Date of birth</label>
+          <input id="DOB" class=" form-control" name="date" type="date">
+        </div>
+        <div class="col-12 col-md-6 d-flex flex-column text-start mt-5">
+          <div class="d-flex justify-content-around align-items-center mt-4">
+            <span><b>Gender:</b></span>
+            <label for="Gndrm"><b> Male</b></label>
+            <input class=" form-check-input" type="radio" id="Gndrm" name="Gender" value="Male">
+            <label for="Gndrf"><b>Female</b></label>
+            <input class=" form-check-input" type="radio" id="Gndrf" name="Gender" value="Female">
+
+          </div>
+        </div>
+        <div class="col-12 col-md-6 d-flex flex-column text-start mt-5">
+          <label for="Address">Address</label>
+          <input id="Address" class="form-control" type="text">
+
+        </div>
+        <div class="col-12 col-md-6 d-flex flex-column text-start mt-5">
+          <label for="LstQualf">Qualification</label>
+          <select class="form-control" name="Last-Qualification" id="LstQualf">
+            <option value="Last-Qualification" selected>Qualification</option>
+            <option value="Masters">Masters</option>
+            <option value="intermidiate">intermidiate</option>
+            <option value="'Matriculation">Matriculation</option>
+          </select>
+        </div>
+        <div class="col-12 d-flex flex-column text-center mt-5">
+          <div class="d-flex justify-content-around mt-4">
+            <span><b>Hobbies:</b></span>
+            <label for="Hobbies4">Swiming</label>
+            <input id="Hobbies4" class="form-check-input" name="hobbies" value="SWIMING" type="checkbox">
+            <label for="Hobbies1">Coding</label>
+            <input id="Hobbies1" class="form-check-input" name="hobbies" value="CODING" type="checkbox">
+            <label for="Hobbies2">Reading</label>
+            <input id="Hobbies2" class="form-check-input" name="hobbies" value="READING" type="checkbox">
+            <label for="Hobbies3">Cycling</label>
+            <input id="Hobbies3" class="form-check-input" name="hobbies" value="CYCLING" type="checkbox">
+          </div>
+        </div>
+
+        <div class="col-12 d-flex flex-column mt-3 text-start mt-5">
+          <legend>Technical Skills</legend>
+          <textarea class="form-control1" name="Technical skills" placeholder="" id="t_skills">
+        </textarea>
+        </div>
+
+        <div class="col-12  d-flex flex-column text-start mt-5 p-3">
+          <legend>Working Experience</legend>
+          <textarea class="form-control1" name="working" id="work"
+            placeholder="Write About Your Achievement If You Have Any">
+        </textarea>
+        </div>
+        <div class="col-12 d-flex justify-content-center p-3">
+          <button onclick="getValue()" class="btn">Submit</button>
+        </div>
+
       </div>
-      <div class="mb-3">
-        <label for="fname" class="fnam-label">Enter Your Father Name</label>
-        <input type="text" class="name" id="f_name" placeholder="Another input placeholder">
-      </div>
-
-
-</div>
+    </div>
+  </div> <!-- container main div end -->
 
 
 
+  <!-- starting main div 2 -->
 
 
-</div>  <!-- Row end -->
-</div> <!-- container main div end -->
-
-
-
-
-
-
-
-
-
-
+  <div id="maindiv-2" class="container  justify-content-center d-flex d-none mt-5">
 
     
-<script src="boot.js"></script>
-<script src="bundle.js"></script>
-<script src="popper.js"></script>
-<script src="sweet.js"></script>
-<script src="app.js"></script>
+                        </div> <!-- cont end -->
+                      </div> <!-- end container main div2 -->
+
+
+
+
+          <script src="boot.js"></script>
+          <script src="bundle.js"></script>
+          <script src="popper.js"></script>
+          <script src="sweet.js"></script>
+          <script src="app.js"></script>
 </body>
+
 </html>
